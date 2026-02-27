@@ -3,5 +3,14 @@
     "allow": [
       "Bash(mvn:*)"
     ]
-  }
+  },
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://gpt-oss-rhaiis.ai.svc.cluster.local:8000",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-oss",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-oss",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-oss",
+    "ANTHROPIC_API_KEY": "dummy",
+    "CLAUDE_CODE_SKIP_AUTH_LOGIN": 1
+  },
+  "apiKeyHelper": "bash -c 'echo $ANTHROPIC_API_KEY'"
 }
